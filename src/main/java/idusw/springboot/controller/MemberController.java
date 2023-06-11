@@ -96,6 +96,10 @@ public class MemberController {
         else
             return "/errors/404";
     }
+    @PostMapping("/register")
+    public void test(@ModelAttribute("member") Member member, Model model) { // 등록 처리 -> service -> repository -> service -> controller
+        System.out.println("test");
+    }
     @GetMapping("/{seq}")
     public String getMember(@PathVariable("seq") Long seq, Model model) {
         Member result = new Member(); // 반환

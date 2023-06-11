@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity // 엔티티 클래스임으로 나타내는 애노테이션
-@Table(name = "ab_board")
+@Table(name = "b202112061_b")
 
 @ToString(exclude = "writer")
 @Getter
